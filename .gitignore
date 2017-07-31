@@ -1,0 +1,17 @@
+# storm project files
+.idea
+
+# netbeans project files
+nbproject
+
+# windows thumbnail cache
+Thumbs.db
+
+# Mac DS_Store Files
+.DS_Store
+
+# node and bower directory
+node_modules/
+
+yarn.lock
+npm-debug.log
