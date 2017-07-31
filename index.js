@@ -136,10 +136,10 @@ const MyForm = {
                     const data = JSON.parse(request.responseText);
                     if (data.status === 'success') {
                         resultContainer.className = 'success';
-                        resultContainer.textContent = data.msg;
+                        resultContainer.textContent = 'success';
                     } else if (data.status === 'error') {
                         resultContainer.className = 'error';
-                        resultContainer.textContent = data.error;
+                        resultContainer.textContent = data.reason;
                     } else if (data.status === 'progress') {
                         resultContainer.className = 'progress';
                         setTimeout(() => {
@@ -148,7 +148,6 @@ const MyForm = {
                             resultContainer.className = '';
                         }, data.timeout)
                     }
-                    submitButton.disabled = false;
                 } else {
                     alert(`${request.status}: ${request.statusText}`)
                 }

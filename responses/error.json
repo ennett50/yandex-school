@@ -1,4 +1,4 @@
 {
   "status": "error",
-  "error": "Что-то пошло не так ..."
+  "reason": "unknown error"
 }
