@@ -102,3 +102,7 @@ body {
     width: 100%;
    background: url('images/loader.gif') 50% no-repeat;
 }
+.form-auth__attention {
+    font-size: 12px;
+    color: #afabab;
+}

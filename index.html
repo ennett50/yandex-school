@@ -13,12 +13,15 @@
     <form id="myForm" name="myForm" class="form-auth js-validate" action="">
         <div class="form-auth__item">
             <input type="text" class="form-auth__field" name="fio" placeholder="ФИО" pattern="([А-ЯЁ][а-яё]+[\-\s]?){3,}" autocomplete="off" />
+            <div class="form-auth__attention">Обязательно ФИО полность и только латинские буквы</div>
         </div>
         <div class="form-auth__item">
             <input type="text" class="form-auth__field" name="email" placeholder="Email" pattern="[a-zA-Z-0-9]{1,}@(ya.ru|yandex.ru|yandex.ua|yandex.by|yandex.kz|yandex.com)" autocomplete="off" />
+            <div class="form-auth__attention">Почта в доменах ya.ru, yandex.ru, yandex.ua, yandex.by, yandex.kz, yandex.com</div>
         </div>
         <div class="form-auth__item">
             <input type="text" class="form-auth__field" name="phone" placeholder="+7(999)999 99-99" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" autocomplete="off" />
+            <div class="form-auth__attention">Телефон в формате +7(999)999 99-99 и сумма всех цифр не должна превышать 30</div>
         </div>
         <button class="form-auth__button" id="submitButton" type="submit">Отправить</button>
         <div class="result">
